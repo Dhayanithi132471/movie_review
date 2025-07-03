@@ -1,9 +1,8 @@
 // src/components/givefeedback.js
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import viewReviews from "./viewReviews";
 
-const givefeedback = () => {
+const GiveFeedback = () => {
   const [form, setForm] = useState({
     name: "",
     movie: "",
@@ -59,4 +58,4 @@ const givefeedback = () => {
   );
 };
 
-export default givefeedback;
+export default GiveFeedback;

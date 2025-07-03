@@ -5,8 +5,10 @@ import {
   Link,
   Navigate,
 } from "react-router-dom";
-import FeedbackForm from "./components/givefeedback";
-import ReviewList from "./components/viewReviews";
+// App.js
+import GiveFeedback from "./components/givefeedback";
+import ViewReviews from "./components/viewReviews";
+
 import "./App.css";
 
 function App() {
@@ -20,8 +22,8 @@ function App() {
         </nav>
         <Routes>
           <Route path="/" element={<Navigate to="/feedback" />} />
-          <Route path="/feedback" element={<FeedbackForm />} />
-          <Route path="/reviews" element={<ReviewList />} />
+          <Route path="/feedback" element={<GiveFeedback />} />
+          <Route path="/reviews" element={<ViewReviews/>} />
         </Routes>
       </div>
     </Router>

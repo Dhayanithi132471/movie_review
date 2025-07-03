@@ -1,8 +1,7 @@
 // src/components/viewReviews.js
 import React, { useEffect, useState } from "react";
-import givefeedback from "./givefeedback";
 
-const viewReviews = () => {
+const ViewReviews = () => {
   const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
@@ -31,4 +30,4 @@ const viewReviews = () => {
   );
 };
 
-export default viewReviews;
+export default ViewReviews;
